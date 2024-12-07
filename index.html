@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+  <title>Imran Portfolio</title>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+  <header id="home">
+
+    <div class="logo">
+      <img src="./images/logo.png" alt="">
+      <h1>imran</h1>
+    </div>
+
+
+    <ul class="ul">
+      <li><a onclick="addBacNav(this)" href="#home" class="active">Home</a></li>
+      <li><a onclick="addBacNav(this)" href="#about">About</a></li>
+      <li><a onclick="addBacNav(this)" href="#tools">Tools</a></li>
+      <li><a onclick="addBacNav(this)" href="#projects">Projects</a></li>
+
+    </ul>
+    <div class="contact">
+      <a href="#contact"> Contact</a>
+    </div>
+    <div class="menu-bar" onclick="toggleMenu()">☰</div>
+
+  </header>
+  <main>
+    <div class="text">
+      <div class="forwork">
+        <img src="./images/me.jpg" alt="">
+        <div class="div"></div>
+        <p>Availible for work</p>
+      </div>
+      <div class="text-title">
+        <h1>Developing Scalable Modern Websites for the Future</h1>
+
+      </div>
+      <div class="buttons">
+        <div class="btn1">
+          <a download href="#">Download Cv <i class='bx bxs-cloud-download'></i></a>
+        </div>
+        <div class="btn-2">
+          <a href="#">My work <i class='bx bxs-briefcase'></i></a>
+        </div>
+      </div>
+
+
+    </div>
+    <div class="image">
+      <img src="./images/me.jpg" alt="">
+    </div>
+  </main>
+  <div class="about" id="about">
+    <div class="about-contant">
+      <div class="image">
+        <img src="./images/me.jpg" alt="">
+      </div>
+      <div class="aboutMeText">
+        <h1>About me </h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id quo, maxime quibusdam debitis saepe quod
+          tempora, quia facilis neque, obcaecati illum quae laudantium consequatur doloribus. Minus ipsam illum
+          voluptate, soluta, consequatur mollitia quam amet ducimus accusantium fuga rerum eveniet quas?
+
+        </p>
+        <div class="buttons" id="aboutButton">
+          <div class="btn1">
+            <a href="#">Download Cv <i class='bx bxs-cloud-download'></i></a>
+          </div>
+          <div class="btn-2">
+            <a href="#">My work <i class='bx bxs-briefcase'></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="tools" id="tools">
+    <div class="toolText">
+      <h1>Essential Tools I Use </h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, velit vel quasi deleniti ex voluptate provident
+        aut sint nesciunt facere culpa maiores fugit molestias ipsum sunt nostrum eaque neque temporibus nulla quae
+        impedit. Accusantium delectus quasi repellat, illum ullam id.
+
+      </p>
+    </div>
+    <div class="tool-cards">
+      <div class="card">
+        <img src="./images/figma.png" alt="Figma Logo" class="card-image">
+        <div class="card-text">
+          <h1>Figma</h1>
+          <p>Drsign Tool</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./images/html.png" class="card-image">
+        <div class="card-text">
+          <h1>Html</h1>
+          <p>Markup language</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./images/css.png" class="card-image">
+        <div class="card-text">
+          <h1>Css</h1>
+          <p>Stylesheet language</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./images/js.png" class="card-image">
+        <div class="card-text">
+          <h1>JavaScript</h1>
+          <p>Programming language</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./images/react.png" class="card-image">
+        <div class="card-text">
+          <h1>React js</h1>
+          <p>JavaScript Library</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./images/node.png" class="card-image">
+        <div class="card-text">
+          <h1>Node js</h1>
+          <p>Runtime Enveroment</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./images/express.png" class="card-image">
+        <div class="card-text">
+          <h1>Express js</h1>
+          <p>Server</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./images/mongdb.png" class="card-image">
+        <div class="card-text">
+          <h1>Mongdb</h1>
+          <p>Data Base</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="projects" id="projects">
+    <div class="title">
+      <h1>My Work</h1>
+    </div>
+    <div class="project-cards">
+
+      <div class="project-card">
+        <div class="image">
+          <img src="./projects image/Frame 1.png" alt="">
+        </div>
+        <div class="text-link">
+          <div class="project-text">
+            <h1>Portfolio website</h1>
+            <div class="tags">
+              <div class="tag">
+                <p>Personal website</p>
+              </div>
+              <div class="tag">
+                <p>About us website</p>
+              </div>
+
+            </div>
+          </div>
+          <button class="project-link">
+
+            <a href="" class='bx bx-right-top-arrow-circle'></a>
+          </button>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="image">
+          <img src="./projects image/2.jpeg" alt="">
+        </div>
+        <div class="text-link">
+          <div class="project-text">
+            <h1>Resturent website</h1>
+            <div class="tags">
+              <div class="tag">
+                <p>Food </p>
+              </div>
+              <div class="tag">
+                <p>Resturent</p>
+              </div>
+
+            </div>
+          </div>
+          <button class="project-link">
+
+            <a href="" class='bx bx-right-top-arrow-circle'></a>
+          </button>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="image">
+          <img src="./projects image/3.jpeg" alt="">
+        </div>
+        <div class="text-link">
+          <div class="project-text">
+            <h1>Inspirational website</h1>
+            <div class="tags">
+              <div class="tag">
+                <p>compony </p>
+              </div>
+              <div class="tag">
+                <p>About us website</p>
+              </div>
+
+            </div>
+          </div>
+          <button class="project-link">
+
+            <a href="" class='bx bx-right-top-arrow-circle'></a>
+          </button>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="image">
+          <img src="./projects image/4.jpeg" alt="">
+        </div>
+        <div class="text-link">
+          <div class="project-text">
+            <h1>Portfolio website</h1>
+            <div class="tags">
+              <div class="tag">
+                <p>Personal website</p>
+              </div>
+              <div class="tag">
+                <p>About us website</p>
+              </div>
+
+            </div>
+          </div>
+          <button class="project-link">
+
+            <a href="" class='bx bx-right-top-arrow-circle'></a>
+          </button>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="image">
+          <img src="./projects image/5.jpeg" alt="">
+        </div>
+        <div class="text-link">
+          <div class="project-text">
+            <h1>Portfolio website</h1>
+            <div class="tags">
+              <div class="tag">
+                <p>Personal website</p>
+              </div>
+              <div class="tag">
+                <p>About us website</p>
+              </div>
+
+            </div>
+          </div>
+          <button class="project-link">
+
+            <a href="" class='bx bx-right-top-arrow-circle'></a>
+          </button>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="image">
+          <img src="./projects image/6.jpeg" alt="">
+        </div>
+        <div class="text-link">
+          <div class="project-text">
+            <h1>Portfolio website</h1>
+            <div class="tags">
+              <div class="tag">
+                <p>Personal website</p>
+              </div>
+              <div class="tag">
+                <p>About us website</p>
+              </div>
+
+            </div>
+          </div>
+          <button class="project-link">
+
+            <a href="" class='bx bx-right-top-arrow-circle'></a>
+          </button>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="image">
+          <img src="./projects image/7.jpeg" alt="">
+        </div>
+        <div class="text-link">
+          <div class="project-text">
+            <h1>Portfolio website</h1>
+            <div class="tags">
+              <div class="tag">
+                <p>Personal website</p>
+              </div>
+              <div class="tag">
+                <p>About us website</p>
+              </div>
+
+            </div>
+          </div>
+          <button class="project-link">
+
+            <a href="" class='bx bx-right-top-arrow-circle'></a>
+          </button>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="image">
+          <img src="./projects image/8.jpeg" alt="">
+        </div>
+        <div class="text-link">
+          <div class="project-text">
+            <h1>Portfolio website</h1>
+            <div class="tags">
+              <div class="tag">
+                <p>Personal website</p>
+              </div>
+              <div class="tag">
+                <p>About us website</p>
+              </div>
+
+            </div>
+          </div>
+          <button class="project-link">
+
+            <a href="" class='bx bx-right-top-arrow-circle'></a>
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+
+</html>
